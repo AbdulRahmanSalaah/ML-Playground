@@ -46,6 +46,23 @@ Perfect for beginners, students, and anyone who wants to understand the inner wo
 - 🌈 Visualizations of decision boundaries
 - 🌼 High accuracy (95%+) on the Iris dataset
 
-**Example Usage:**
-```bash
-python KNN/main.py --k 5 --distance euclidean
+
+---
+
+### 3. 🔹 Linear & Logistic Regression (Jupyter Notebook)
+
+**Notebook:** `LinearRegression&LogisticRegression.ipynb`  
+An interactive exploration of regression using multiple optimization strategies.
+
+**What’s inside:**
+- 📊 Data generation and splitting
+- 📉 **Linear Regression** with:
+  - Batch Gradient Descent  
+  - Stochastic Gradient Descent  
+  - Mini-batch Gradient Descent
+- 🔐 **Logistic Regression** with:
+  - Batch Gradient Descent  
+  - Stochastic Gradient Descent  
+  - Mini-batch Gradient Descent
+
+
