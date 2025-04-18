@@ -64,5 +64,44 @@ An interactive exploration of regression using multiple optimization strategies.
   - Batch Gradient Descent  
   - Stochastic Gradient Descent  
   - Mini-batch Gradient Descent
+ 
+  ---
 
+  # Voice Gender Classification
+
+A machine learning system that classifies voice recordings as male or female using audio features and ensemble learning techniques.
+
+## Project Overview
+
+This project demonstrates:
+- Audio feature extraction (MFCCs, spectral features)
+- Custom Gaussian Naive Bayes implementation
+- Model comparison with scikit-learn classifiers
+- Ensemble methods with Bagging
+- Real-time voice prediction capability
+
+## Key Features
+
+- **Audio Processing**:
+  - Noise reduction and silence removal
+  - MFCC, spectral centroid, rolloff, and ZCR feature extraction
+- **Machine Learning Models**:
+  - Custom Gaussian Naive Bayes (80% accuracy)
+  - Scikit-learn's GaussianNB (80% accuracy)
+  - Logistic Regression (86.7% accuracy)
+- **Ensemble Learning**:
+  - Bagging classifiers with majority voting
+  - Achieves 83.3% accuracy
+
+## Results Summary
+
+| Model                  | Accuracy | Precision | Recall | F1-Score |
+|------------------------|----------|-----------|--------|----------|
+| Custom NB              | 0.8000   | 0.8000    | 0.8000 | 0.8000   |
+| Logistic Regression    | 0.8667   | 0.9231    | 0.8000 | 0.8571   |
+| Bagging (Logistic)     | 0.8667   | 1.0000    | 0.7333 | 0.8462   |
+
+
+ 
+---
 
