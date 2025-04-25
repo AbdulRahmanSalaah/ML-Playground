@@ -1,73 +1,23 @@
-# ML-Playground
+# ML-Playground: Algorithmic Implementations & Applied Machine Learning
 
-## 🚀 Machine Learning Algorithms from Scratch in Python
+## A Comprehensive Collection of Machine Learning Systems
 
-Welcome to **ML-Playground**, a collection of core machine learning algorithms implemented from scratch using Python.  
-Perfect for beginners, students, and anyone who wants to understand the inner workings of ML models.
+### From First Principles to Production Implementations
+
+This repository features rigorous implementations of core machine learning algorithms developed from the ground up in Python, complemented by real-world applications demonstrating practical deployment.
+
+**Key Characteristics:**
+- **Foundational Implementations**: Pure Python/Numpy implementations of classical algorithms
+- **Production-Grade Systems**: Complete ML pipelines from data ingestion to deployment
+- **Academic Rigor**: Mathematically faithful implementations with theoretical grounding
+- **Practical Engineering**: Optimized for performance and real-world applicability
 
 ---
 
 ## 🌟 Featured Algorithms
 
-### 1. 🔹 Linear Regression
 
-**Implemented using Gradient Descent**
-
-**Key Features:**
-- 💡 Flexible execution using `ArgumentParser`
-- 🛠️ Preprocessing options:
-  - `0`: No preprocessing  
-  - `1`: Min/Max scaling  
-  - `2`: Standardization
-- 🧠 Training choices:
-  - `0`: Verify a perfect 45-degree linear line  
-  - `1`: Train with all features  
-  - `2`: Train with the best feature  
-  - `3`: Solve using Normal Equations  
-  - `4`: Solve using Scikit-Learn
-- ⚙️ Adjustable parameters:
-  - `--step_size`: Learning rate  
-  - `--precision`: Requested precision  
-  - `--max_iter`: Maximum number of iterations (epochs)  
-  - `--dataset`: Path to dataset file
-
----
-
-### 2. 🔹 K-Nearest Neighbors (KNN) Classifier
-
-**From-scratch implementation of a classic classification algorithm**
-
-**Key Features:**
-- 📏 Distance metrics supported:
-  - ✅ Euclidean distance (`euclidean`)
-  - ✅ Cosine similarity (`cosine`) 
-  - ✅ Manhattan distance (`manhattan`)
-- 🔢 Flexible neighbor selection with adjustable `k` value
-- 🌈 Visualizations of decision boundaries
-- 🌼 High accuracy (95%+) on the Iris dataset
-
-
----
-
-### 3. 🔹 Linear & Logistic Regression 
-
-**Notebook:** `LinearRegression&LogisticRegression.ipynb`  
-An interactive exploration of regression using multiple optimization strategies.
-
-**What’s inside:**
-- 📊 Data generation and splitting
-- 📉 **Linear Regression** with:
-  - Batch Gradient Descent  
-  - Stochastic Gradient Descent  
-  - Mini-batch Gradient Descent
-- 🔐 **Logistic Regression** with:
-  - Batch Gradient Descent  
-  - Stochastic Gradient Descent  
-  - Mini-batch Gradient Descent
- 
-  ---
-
-### 4. 🔹 Voice Gender Classification
+### 1. 🔹 Voice Gender Classification
 
 A machine learning system that classifies voice recordings as male or female using audio features and ensemble learning techniques.
 
@@ -104,4 +54,106 @@ This project demonstrates:
 
  
 ---
+### 2. 🔹 NYC Taxi Trip Duration - EDA Summary
+
+## 📌 Key Insights
+
+### 1. **Data Overview**
+- **1M records** | **10 features** | **No missing values**
+- Avg. trip duration: **954 sec** (~16 min) | Max: **2.2M sec** (outliers present)
+
+### 2. **Trip Duration Analysis**
+- Right-skewed distribution → **Log transform applied**
+- 75% of trips < **1,074 sec** (~18 min)
+
+### 3. **Spatial Features**
+- Calculated **Haversine distance** between pickup/dropoff
+- Created **traffic congestion** categories (Light/Heavy)
+
+### 4. **Temporal Patterns**
+- Extracted:
+  - Hour of day (peak hours)
+  - Day of week (weekday/weekend)
+  - Monthly trends
+
+### 5. **Passenger Count**
+- Avg: **1.67 passengers**
+- Removed unrealistic values (0 or >7 passengers)
+
+## 🔍 Notable Findings
+- Strong correlation between **distance and duration**
+- Significant **rush hour effects** on trip times
+- **Geospatial clusters** around Manhattan
+
+## ⚙️ Feature Engineering
+1. Log-transformed target (`trip_duration`)
+2. Derived:
+   - Straight-line distance
+   - Time-based features
+   - Traffic indicators
+
+---
+
+### 3. 🔹 Linear & Logistic Regression 
+
+**Notebook:** `LinearRegression&LogisticRegression.ipynb`  
+An interactive exploration of regression using multiple optimization strategies.
+
+**What’s inside:**
+- 📊 Data generation and splitting
+- 📉 **Linear Regression** with:
+  - Batch Gradient Descent  
+  - Stochastic Gradient Descent  
+  - Mini-batch Gradient Descent
+- 🔐 **Logistic Regression** with:
+  - Batch Gradient Descent  
+  - Stochastic Gradient Descent  
+  - Mini-batch Gradient Descent
+ 
+  ---
+### 4. 🔹 K-Nearest Neighbors (KNN) Classifier
+
+**From-scratch implementation of a classic classification algorithm**
+
+**Key Features:**
+- 📏 Distance metrics supported:
+  - ✅ Euclidean distance (`euclidean`)
+  - ✅ Cosine similarity (`cosine`) 
+  - ✅ Manhattan distance (`manhattan`)
+- 🔢 Flexible neighbor selection with adjustable `k` value
+- 🌈 Visualizations of decision boundaries
+- 🌼 High accuracy (95%+) on the Iris dataset
+
+---
+### 5. 🔹 Linear Regression
+
+**Implemented using Gradient Descent**
+
+**Key Features:**
+- 💡 Flexible execution using `ArgumentParser`
+- 🛠️ Preprocessing options:
+  - `0`: No preprocessing  
+  - `1`: Min/Max scaling  
+  - `2`: Standardization
+- 🧠 Training choices:
+  - `0`: Verify a perfect 45-degree linear line  
+  - `1`: Train with all features  
+  - `2`: Train with the best feature  
+  - `3`: Solve using Normal Equations  
+  - `4`: Solve using Scikit-Learn
+- ⚙️ Adjustable parameters:
+  - `--step_size`: Learning rate  
+  - `--precision`: Requested precision  
+  - `--max_iter`: Maximum number of iterations (epochs)  
+  - `--dataset`: Path to dataset file
+
+---
+
+
+
+
+
+
+
+
 
