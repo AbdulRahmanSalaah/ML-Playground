@@ -1,4 +1,4 @@
-# 🚀 ML-Playground: From Fundamentals to Real-World Applications
+# 🚀ML-Playground: From Fundamentals to Real-World Applications
 A hands-on collection of machine learning implementations ranging from algorithmic foundations to production-ready systems
 ---
 
