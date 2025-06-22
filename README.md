@@ -5,83 +5,7 @@ A hands-on collection of machine learning implementations ranging from algorithm
 ## 🌟 Featured Algorithms
 
 
-### 1. 🔹 Voice Gender Classification
-
-A machine learning system that classifies voice recordings as male or female using audio features and ensemble learning techniques.
-
-## Project Overview
-
-This project demonstrates:
-- Audio feature extraction (MFCCs, spectral features)
-- Custom Gaussian Naive Bayes implementation
-- Model comparison with scikit-learn classifiers
-- Ensemble methods with Bagging
-- Real-time voice prediction capability
-
-## Key Features
-
-- **Audio Processing**:
-  - Noise reduction and silence removal
-  - MFCC, spectral centroid, rolloff, and ZCR feature extraction
-- **Machine Learning Models**:
-  - Custom Gaussian Naive Bayes (80% accuracy)
-  - Scikit-learn's GaussianNB (80% accuracy)
-  - Logistic Regression (86.7% accuracy)
-- **Ensemble Learning**:
-  - Bagging classifiers with majority voting
-  - Achieves 83.3% accuracy
-
-## Results Summary
-
-| Model                  | Accuracy | Precision | Recall | F1-Score |
-|------------------------|----------|-----------|--------|----------|
-| Custom NB              | 0.8000   | 0.8000    | 0.8000 | 0.8000   |
-| Logistic Regression    | 0.8667   | 0.9231    | 0.8000 | 0.8571   |
-| Bagging (Logistic)     | 0.8667   | 1.0000    | 0.7333 | 0.8462   |
-
-
- 
----
-### 2. 🔹 NYC Taxi Trip Duration - EDA Summary
-
-## 📌 Key Insights
-
-### 1. **Data Overview**
-- **1M records** | **10 features** | **No missing values**
-- Avg. trip duration: **954 sec** (~16 min) | Max: **2.2M sec** (outliers present)
-
-### 2. **Trip Duration Analysis**
-- Right-skewed distribution → **Log transform applied**
-- 75% of trips < **1,074 sec** (~18 min)
-
-### 3. **Spatial Features**
-- Calculated **Haversine distance** between pickup/dropoff
-- Created **traffic congestion** categories (Light/Heavy)
-
-### 4. **Temporal Patterns**
-- Extracted:
-  - Hour of day (peak hours)
-  - Day of week (weekday/weekend)
-  - Monthly trends
-
-### 5. **Passenger Count**
-- Avg: **1.67 passengers**
-- Removed unrealistic values (0 or >7 passengers)
-
-## 🔍 Notable Findings
-- Strong correlation between **distance and duration**
-- Significant **rush hour effects** on trip times
-- **Geospatial clusters** around Manhattan
-
-## ⚙️ Feature Engineering
-1. Log-transformed target (`trip_duration`)
-2. Derived:
-   - Straight-line distance
-   - Time-based features
-   - Traffic indicators
-
----
-### 3. 🔹 Credit Card Fraud Detection
+### 1. 🔹 Credit Card Fraud Detection
 
 **Notebook:** `CreditCardTransactionDatasetOverview.ipynb`  
 **Advanced machine learning system for detecting fraudulent credit card transactions using ensemble methods and neural networks.**
@@ -147,8 +71,84 @@ python credit_fraud_train.py --train_data data/split/train.csv
 # Evaluate performance  
 python main.py --test_data data/split/test.csv --models_dir saved_models
 ```
+---
+### 2. 🔹 Voice Gender Classification
+
+A machine learning system that classifies voice recordings as male or female using audio features and ensemble learning techniques.
+
+## Project Overview
+
+This project demonstrates:
+- Audio feature extraction (MFCCs, spectral features)
+- Custom Gaussian Naive Bayes implementation
+- Model comparison with scikit-learn classifiers
+- Ensemble methods with Bagging
+- Real-time voice prediction capability
+
+## Key Features
+
+- **Audio Processing**:
+  - Noise reduction and silence removal
+  - MFCC, spectral centroid, rolloff, and ZCR feature extraction
+- **Machine Learning Models**:
+  - Custom Gaussian Naive Bayes (80% accuracy)
+  - Scikit-learn's GaussianNB (80% accuracy)
+  - Logistic Regression (86.7% accuracy)
+- **Ensemble Learning**:
+  - Bagging classifiers with majority voting
+  - Achieves 83.3% accuracy
+
+## Results Summary
+
+| Model                  | Accuracy | Precision | Recall | F1-Score |
+|------------------------|----------|-----------|--------|----------|
+| Custom NB              | 0.8000   | 0.8000    | 0.8000 | 0.8000   |
+| Logistic Regression    | 0.8667   | 0.9231    | 0.8000 | 0.8571   |
+| Bagging (Logistic)     | 0.8667   | 1.0000    | 0.7333 | 0.8462   |
+
+
+ 
+---
+### 3. 🔹 NYC Taxi Trip Duration - EDA Summary
+
+## 📌 Key Insights
+
+### 1. **Data Overview**
+- **1M records** | **10 features** | **No missing values**
+- Avg. trip duration: **954 sec** (~16 min) | Max: **2.2M sec** (outliers present)
+
+### 2. **Trip Duration Analysis**
+- Right-skewed distribution → **Log transform applied**
+- 75% of trips < **1,074 sec** (~18 min)
+
+### 3. **Spatial Features**
+- Calculated **Haversine distance** between pickup/dropoff
+- Created **traffic congestion** categories (Light/Heavy)
+
+### 4. **Temporal Patterns**
+- Extracted:
+  - Hour of day (peak hours)
+  - Day of week (weekday/weekend)
+  - Monthly trends
+
+### 5. **Passenger Count**
+- Avg: **1.67 passengers**
+- Removed unrealistic values (0 or >7 passengers)
+
+## 🔍 Notable Findings
+- Strong correlation between **distance and duration**
+- Significant **rush hour effects** on trip times
+- **Geospatial clusters** around Manhattan
+
+## ⚙️ Feature Engineering
+1. Log-transformed target (`trip_duration`)
+2. Derived:
+   - Straight-line distance
+   - Time-based features
+   - Traffic indicators
 
 ---
+
 ### 4. 🔹 Linear & Logistic Regression 
 
 **Notebook:** `LinearRegression&LogisticRegression.ipynb`  
