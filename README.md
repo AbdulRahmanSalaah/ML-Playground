@@ -81,8 +81,75 @@ This project demonstrates:
    - Traffic indicators
 
 ---
+### 3. 🔹 Credit Card Fraud Detection
 
-### 3. 🔹 Linear & Logistic Regression 
+**Notebook:** `CreditCardTransactionDatasetOverview.ipynb`  
+**Advanced machine learning system for detecting fraudulent credit card transactions using ensemble methods and neural networks.**
+
+## Project Overview
+
+This project demonstrates:
+- Comprehensive EDA of credit card transaction patterns
+- Multi-model approach with Neural Networks, Logistic Regression, and Random Forest
+- Ensemble learning with Voting Classifier
+- Production-ready fraud detection pipeline
+- Advanced evaluation metrics for imbalanced datasets
+
+## Key Features
+
+- **🧠 Multi-Model Architecture**:
+  - Neural Network (MLPClassifier) with 64→32 hidden layers
+  - Logistic Regression with optimized threshold (0.7)
+  - Random Forest with 50 estimators
+  - Soft Voting Classifier ensemble
+- **🔧 Production Pipeline**:
+  - StandardScaler for feature normalization
+  - Automated model persistence with joblib
+  - Command-line training and evaluation interface
+- **📊 Imbalanced Data Handling**:
+  - F1-Score and PR-AUC evaluation metrics
+  - SMOTE integration ready for oversampling
+  - Handles extreme class imbalance (0.17% fraud rate)
+
+## Results Summary
+
+| Model                  | F1-Score | PR-AUC | Precision | Recall | Accuracy |
+|------------------------|----------|--------|-----------|--------|----------|
+| **Random Forest**      | **0.8525** | **0.8466** | 0.8966    | 0.8125 | 99.95%   |
+| Neural Network (MLP)   | 0.8333   | 0.8395 | 0.8929    | 0.7812 | 99.95%   |
+| Voting Classifier      | 0.7978   | 0.8370 | 0.8391    | 0.7604 | 99.93%   |
+| Logistic Regression    | 0.7374   | 0.7258 | 0.7952    | 0.6875 | 99.92%   |
+
+## 🎯 Notable Findings
+- **Random Forest** achieves best overall performance with 85.25% F1-Score
+- Successfully handles extreme imbalance: **96 fraud cases** out of **56,908** transactions
+- High precision rates (79-89%) minimize false fraud alerts for customer experience
+- Strong recall performance (68-81%) ensures most fraudulent transactions are caught
+
+## ⚙️ Architecture
+
+```
+📁 Credit Card Fraud Detection/
+├── 📓 CreditCardTransactionDatasetOverview.ipynb  # EDA & Data Analysis
+├── 🐍 credit_fraud_train.py                       # Multi-model training pipeline
+├── 🐍 credit_fraud_utils_eval.py                  # Comprehensive evaluation suite
+├── 🐍 credit_fraud_utils_data.py                  # Data preprocessing utilities
+├── 🐍 main.py                                     # Orchestration script
+├── 📊 data/split/                                 # Train/test datasets
+└── 💾 saved_models/                               # Serialized models + scalers
+```
+
+**Usage:**
+```bash
+# Train all models
+python credit_fraud_train.py --train_data data/split/train.csv
+
+# Evaluate performance  
+python main.py --test_data data/split/test.csv --models_dir saved_models
+```
+
+---
+### 4. 🔹 Linear & Logistic Regression 
 
 **Notebook:** `LinearRegression&LogisticRegression.ipynb`  
 An interactive exploration of regression using multiple optimization strategies.
@@ -99,7 +166,7 @@ An interactive exploration of regression using multiple optimization strategies.
   - Mini-batch Gradient Descent
  
   ---
-### 4. 🔹 K-Nearest Neighbors (KNN) Classifier
+### 5. 🔹 K-Nearest Neighbors (KNN) Classifier
 
 **From-scratch implementation of a classic classification algorithm**
 
@@ -113,7 +180,7 @@ An interactive exploration of regression using multiple optimization strategies.
 - 🌼 High accuracy (95%+) on the Iris dataset
 
 ---
-### 5. 🔹 Linear Regression
+### 6. 🔹 Linear Regression
 
 **Implemented using Gradient Descent**
 
