@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score
 
 np.random.seed(0)
 
-# ---------- Utility Functions ----------
+# ---------- Utility Functions ---------
 
 def load_data():
     X = np.load('E:/kolya/ML Course/Videos/9 Multiclase/mnist-sample/mnist-sample/X.npy')
