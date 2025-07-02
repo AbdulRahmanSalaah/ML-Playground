@@ -148,8 +148,34 @@ This project demonstrates:
    - Traffic indicators
 
 ---
+### 4. 🔹 Neural Network from Scratch (MNIST Multiclass Classifier)
 
-### 4. 🔹 Linear & Logistic Regression 
+A fully connected, **vectorized neural network** built entirely from scratch using NumPy — no external ML libraries.
+
+#### 🧠 Project Overview
+
+This project demonstrates:
+
+- Implementation of forward and backward propagation manually
+- Batch training using cross-entropy loss
+- Multiclass classification on the MNIST dataset (digits 0–9)
+- Fast **vectorized NumPy operations** (no explicit loops)
+- Clean design focused on understanding the fundamentals
+
+#### ⚙️ Architecture
+
+- **Input Layer:** 784 neurons (28×28 pixel images)
+- **Hidden Layer 1:** 20 neurons, using `tanh` activation
+- **Hidden Layer 2:** 15 neurons, using `tanh` activation
+- **Output Layer:** 10 neurons, using `softmax` activation
+#### 🔑 Key Features
+
+- 🚀 Fully **vectorized** forward and backward pass (efficient and scalable)
+- 🧮 Manual implementation of all key neural network steps
+- 🧠 No libraries like TensorFlow or PyTorch — just NumPy
+---
+
+### 5. 🔹 Linear & Logistic Regression 
 
 **Notebook:** `LinearRegression&LogisticRegression.ipynb`  
 An interactive exploration of regression using multiple optimization strategies.
@@ -166,7 +192,7 @@ An interactive exploration of regression using multiple optimization strategies.
   - Mini-batch Gradient Descent
  
   ---
-### 5. 🔹 K-Nearest Neighbors (KNN) Classifier
+### 6. 🔹 K-Nearest Neighbors (KNN) Classifier
 
 **From-scratch implementation of a classic classification algorithm**
 
@@ -180,7 +206,7 @@ An interactive exploration of regression using multiple optimization strategies.
 - 🌼 High accuracy (95%+) on the Iris dataset
 
 ---
-### 6. 🔹 Linear Regression
+### 7. 🔹 Linear Regression
 
 **Implemented using Gradient Descent**
 
