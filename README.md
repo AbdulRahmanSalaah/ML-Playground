@@ -28,7 +28,7 @@ This project demonstrates:
   - Tokenizer for text processing
   - Optimized Dataset/DataLoader classes
 
-    <img width="813" height="555" alt="image" src="https://github.com/user-attachments/assets/47cc382b-a7b9-4425-a6d7-a435a0f0b73a" />
+<img width="813" height="555" alt="image" src="https://github.com/user-attachments/assets/47cc382b-a7b9-4425-a6d7-a435a0f0b73a" />
 
 ---
 ### 2. 🔹 Credit Card Fraud Detection
