@@ -5,7 +5,33 @@ A hands-on collection of machine learning implementations ranging from algorithm
 ## 🌟 Featured Algorithms
 
 
-### 1. 🔹 Credit Card Fraud Detection
+### 1. 🔹 Image-to-Text Generation with CNN-LSTM (EfficientNetB7)
+
+A deep learning project that generates natural language captions from images using a **pretrained EfficientNetB7** for feature extraction and **LSTM** for sequence generation.
+
+## Project Overview
+
+This project demonstrates:
+- CNN-based feature extraction using **EfficientNetB7 pretrained on ImageNet**
+- LSTM-based sequence modeling for natural language generation
+- Custom PyTorch pipeline for training and evaluation
+- Flickr8k dataset with **82% BLEU-1 score**
+
+## Key Features
+
+- **Feature Extraction**:
+  - Pretrained **EfficientNetB7** → high-quality image embeddings
+- **Sequence Generation**:
+  - **LSTM** decoder to generate captions word-by-word
+- **Custom Pipeline**:
+  - **6,000+ word vocabulary**
+  - Tokenizer for text processing
+  - Optimized Dataset/DataLoader classes
+
+    <img width="813" height="555" alt="image" src="https://github.com/user-attachments/assets/47cc382b-a7b9-4425-a6d7-a435a0f0b73a" />
+
+---
+### 2. 🔹 Credit Card Fraud Detection
 
 **Notebook:** `CreditCardTransactionDatasetOverview.ipynb`  
 **Advanced machine learning system for detecting fraudulent credit card transactions using ensemble methods and neural networks.**
